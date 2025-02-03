@@ -1,73 +1,89 @@
-# Ecommerce platform (fullstack project) Spring boot 3, Angular 18, Tailwind CSS, PostgreSQL, Kinde (2024)
+# Ecommerce Platform (Full-Stack Project) – Spring Boot 3, Angular 18, Tailwind CSS, PostgreSQL, Kinde (2024)
 
-Monorepo of the Ecommerce platform app.
+## Overview
 
-[Video tutorial](https://youtu.be/4npG3sAMT5I)
+This is a full-stack **e-commerce platform** designed to showcase expertise in modern web development, using **Spring Boot 3** for the backend and **Angular 18** for the frontend. The project adheres to **best practices in software architecture**, including **Hexagonal Architecture** and **server-side rendering (SSR) with Angular**, ensuring scalability, maintainability, and performance.
 
-### Key Features:
-- 🛠️ Admin panel for products and categories 
-- 🔍✨ Filter engine
-- 🌐⚡ Angular SSR 
-- 💳 Stripe integration
-- 🏢 Hexagonal architecture (Backend)
+## Features
 
+- **🛠️ Admin Dashboard** – Manage products and categories efficiently.
+- **🔍✨ Advanced Filtering System** – Users can filter and search products dynamically.
+- **🌐⚡ Angular SSR (Server-Side Rendering)** – Improved SEO and faster initial load times.
+- **💳 Stripe Integration** – Secure payment processing.
+- **🏢 Hexagonal Architecture** – Clean, maintainable backend structure.
+- **🔑 Authentication with Kinde** – Secure and scalable authentication.
 
-## Usage
+---
+
+## Installation & Setup
+
 ### Prerequisites
+
+Ensure you have the following installed:
+
 - [NodeJS 20.17 LTS](https://nodejs.org/dist/v20.17.0/node-v20.17.0.pkg)
 - [Angular CLI v18](https://www.npmjs.com/package/@angular/cli)
-- IDE ([VSCode](https://code.visualstudio.com/download), [IntelliJ](https://www.jetbrains.com/idea/download/))
+- IDE: [VSCode](https://code.visualstudio.com/download) / [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
 - [JDK 21](https://adoptium.net/temurin/releases/)
-- Docker ([Docker Desktop](https://docs.docker.com/engine/install/))
+- [Docker (for containerized deployment)](https://docs.docker.com/engine/install/)
 
-### Fetch dependencies
-``npm install``
+### Environment Variables
 
-You will need to create an .env file at the root of the ecom-backend folder with the following values :
+Create an `.env` file inside the `ecom-backend` folder and configure the following:
 
-````
-KINDE_CLIENT_ID=<client-id>
-KINDE_CLIENT_SECRET=<client-secret>
-STRIPE_API_KEY=<stripe-api-key>
-STRIPE_WEBHOOK_SECRET=<stripe-webhook-secret>
-````
+Here's a revised version of your markdown file optimized to help you secure a junior position. The modifications highlight your skills, technologies used, and project architecture while making it clear that this is a production-ready application. The wording is also more professional and structured.
 
-## Manage the frontend
+markdown
+Copy
+Edit
+# Ecommerce Platform (Full-Stack Project) – Spring Boot 3, Angular 18, Tailwind CSS, PostgreSQL, Kinde (2024)
 
-To run the dev server for your app, use:
+## Overview
+
+This is a full-stack **e-commerce platform** designed to showcase expertise in modern web development, using **Spring Boot 3** for the backend and **Angular 18** for the frontend. The project adheres to **best practices in software architecture**, including **Hexagonal Architecture** and **server-side rendering (SSR) with Angular**, ensuring scalability, maintainability, and performance.
+
+## Features
+
+- **🛠️ Admin Dashboard** – Manage products and categories efficiently.
+- **🔍✨ Advanced Filtering System** – Users can filter and search products dynamically.
+- **🌐⚡ Angular SSR (Server-Side Rendering)** – Improved SEO and faster initial load times.
+- **💳 Stripe Integration** – Secure payment processing.
+- **🏢 Hexagonal Architecture** – Clean, maintainable backend structure.
+- **🔑 Authentication with Kinde** – Secure and scalable authentication.
+
+---
+
+## Installation & Setup
+
+### Prerequisites
+
+Ensure you have the following installed:
+
+- [NodeJS 20.17 LTS](https://nodejs.org/dist/v20.17.0/node-v20.17.0.pkg)
+- [Angular CLI v18](https://www.npmjs.com/package/@angular/cli)
+- IDE: [VSCode](https://code.visualstudio.com/download) / [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
+- [JDK 21](https://adoptium.net/temurin/releases/)
+- [Docker (for containerized deployment)](https://docs.docker.com/engine/install/)
+
+### Environment Variables
+
+Create an `.env` file inside the `ecom-backend` folder and configure the following:
+KINDE_CLIENT_ID=<client-id> KINDE_CLIENT_SECRET=<client-secret> STRIPE_API_KEY=<stripe-api-key> STRIPE_WEBHOOK_SECRET=<stripe-webhook-secret>
+
+
+---
+
+## Running the Project
+
+### Frontend
+
+To start the **development server**:
 
 ```sh
 npx nx serve ecom-frontend
-```
 
-To create a production bundle:
-
-```sh
 npx nx build ecom-frontend
-```
-
-To see all available targets to run for a project, run:
-
-```sh
 npx nx show project ecom-frontend
-```
-
-## Manage the Backend
-
-To run the dev server for your app, use:
-
-```sh
 npx nx serve ecom-backend
-```
-
-To create a production bundle:
-
-```sh
 npx nx build ecom-backend
-```
-
-To see all available targets to run for a project, run:
-
-```sh
 npx nx show project ecom-backend
-```
