@@ -25,7 +25,7 @@ Ensure you have the following installed:
 - [Angular CLI v18](https://www.npmjs.com/package/@angular/cli)
 - IDE: [VSCode](https://code.visualstudio.com/download) / [IntelliJ IDEA](https://www.jetbrains.com/idea/download/)
 - [JDK 21](https://adoptium.net/temurin/releases/)
-- [Docker (for containerized deployment)](https://docs.docker.com/engine/install/)
+
 
 ### Environment Variables
 
